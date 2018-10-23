@@ -2,7 +2,7 @@
 
 To use VDSTextToSpeech, follow the simple steps
 
-1. drag #VDSTextToSpeech to your project.
+1. drag VDSTextToSpeech to your project.
 
 2. create a variable for easy access to VDSTextToSpeech
 
@@ -13,7 +13,9 @@ To use VDSTextToSpeech, follow the simple steps
         vds.text = "welcome to VDS Text to speech module. Hope you enjoy"
         
 4. speak() : to make VDSTextToSpeech read the message
+
    stopSpeech() : to stop reading
+   
    pauseSpeech() : to pause reading (to resume call speak() again)
         
 8. to get callbacks and progress, add VDSTextToSpeech delegate to class
