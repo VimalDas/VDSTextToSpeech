@@ -2,7 +2,7 @@
 
 To use VDSTextToSpeech, follow the simple steps
 
-1. drag VDSTextToSpeech to your project.
+1. drag #VDSTextToSpeech to your project.
 
 2. create a variable for easy access to VDSTextToSpeech
 
