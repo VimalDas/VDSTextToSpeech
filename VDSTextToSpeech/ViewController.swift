@@ -21,7 +21,7 @@ class ViewController: UIViewController,VDSSpeechSynthesizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        message.text = "YEs you're right but when we pass a String to a function, then that receiving parameter will become immutable. var string: String"
+        message.text = "welcome to VDS Text to speech module. Hope you enjoy"
         
         let vds = VDSTextToSpeech.shared
         vds.speechSynthesizerDelegate = self
