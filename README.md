@@ -6,7 +6,7 @@ To use VDSTextToSpeech, follow the simple steps
 
 2. create a variable for easy access to VDSTextToSpeech
 
-  let vds = VDSTextToSpeech.shared
+        let vds = VDSTextToSpeech.shared
 
 3. give the message to be read.
         
@@ -17,22 +17,23 @@ To use VDSTextToSpeech, follow the simple steps
    pauseSpeech() : to pause reading (to resume call speak() again)
         
 8. to get callbacks and progress, add VDSTextToSpeech delegate to class
+          eg: 
 
-    eg: class ViewController: UIViewController,VDSSpeechSynthesizerDelegate {
+        class ViewController: UIViewController,VDSSpeechSynthesizerDelegate {
     
         vds.speechSynthesizerDelegate = self
         
         
         //MARK:- VDSSpeechSynthesizerDelegate
-    func speechSynthesizerProgress(_ progress: Float, attributedText: NSMutableAttributedString) {
-        messageLabel.attributedText = attributedText
-        progressView.progress = progress
-    }
-    
-    func speechSynthesizerDidStart() {
-        print("speechSynthesizerDidStart")
-    }
-    
-    func speechSynthesizerDidFinish() {
-        print("speechSynthesizerDidFinish")
-    }
+        func speechSynthesizerProgress(_ progress: Float, attributedText: NSMutableAttributedString) {
+            messageLabel.attributedText = attributedText
+            progressView.progress = progress
+        }
+
+        func speechSynthesizerDidStart() {
+            print("speechSynthesizerDidStart")
+        }
+
+        func speechSynthesizerDidFinish() {
+            print("speechSynthesizerDidFinish")
+        }
